@@ -1,0 +1,19 @@
+{ "name" : "Smash-it Weather App" ,
+    "short_name" : "S-Weather" ,
+    "start_url" : "/index.html" ,
+    "display" : "standalone" ,
+    "background_color" : "#7400b8" ,
+    "theme_color" : "#edf6f9" ,
+    "orientation" : "portrait-primary" ,
+    "icons" : [
+        {
+        "src" : "/smash.png"
+    }
+    ]
+    
+    
+
+
+
+
+}
