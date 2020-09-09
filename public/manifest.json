@@ -3,12 +3,103 @@
     "start_url" : "/index.html" ,
     "display" : "standalone" ,
     "background_color" : "#7400b8" ,
-    "theme_color" : "#edf6f9" ,
+    "theme_color" : "#FF4500" ,
     "orientation" : "portrait-primary" ,
     "icons" : [
         {
-        "src" : "/smash.png"
-    }
+        "src" : "/android-icon-35x35.png" ,
+        "type" : "image/png" ,
+        "sizes" : "35x35"
+        } ,
+
+        {
+            "src" : "/android-icon-46x46.png" ,
+            "type" : "image/png" ,
+            "sizes" : "46x46"
+        } ,
+        {
+            "src" : "/android-icon-70x70.png" ,
+            "type" : "image/png" ,
+            "sizes" : "70x70"
+        } ,
+        {
+            "src" : "/android-icon-94x94.png" ,
+            "type" : "image/png" ,
+            "sizes" : "94x94"
+        } ,
+        {
+            "src" : "/android-icon-142x142.png" ,
+            "type" : "image/png" ,
+            "sizes" : "142x142"
+        } ,
+       
+        {
+             "src" : "/apple-icon-56x56.png" ,
+            "type" : "image/png" ,
+             "sizes" : "56x56"
+        } ,
+        {
+            "src" : "/apple-icon-59x59.png" ,
+           "type" : "image/png" ,
+            "sizes" : "59x59"
+       } ,
+       {
+        "src" : "/apple-icon-71x71.png" ,
+       "type" : "image/png" ,
+        "sizes" : "71x71"
+        } ,
+        {
+            "src" : "/apple-icon-75x75.png" ,
+           "type" : "image/png" ,
+            "sizes" : "75x75"
+       } ,
+       {
+        "src" : "/apple-icon-112x112.png" ,
+       "type" : "image/png" ,
+        "sizes" : "112x112"
+        } ,
+        {
+            "src" : "android-icon-118x118.png" ,
+            "type" : "image/png" ,
+            "sizes" : "118x118"
+        } ,
+        {
+            "src" : "/apple-icon-150x150.png" ,
+           "type" : "image/png" ,
+            "sizes" : "150x150"
+       } ,
+       {
+        "src" : "/apple-icon-178x178.png" ,
+       "type" : "image/png" ,
+        "sizes" : "178x178"
+        } ,
+        {
+            "src" : "/apple-icon-precomposed.png" ,
+           "type" : "image/png" ,
+            "sizes" : "190x190"
+       } ,
+       {
+        "src" : "/ms-icon69x69.png" ,
+       "type" : "image/png" ,
+        "sizes" : "69x69"
+        } ,
+       
+       {
+        "src" : "/ms-icon-308x308.png" ,
+       "type" : "image/png" ,
+        "sizes" : "308x308"
+   } ,
+
+       {
+        "src" : "/maskable_icon.png" ,
+       "type" : "image/png" ,
+        "sizes" : "1000x1000"
+   } ,
+   {
+    "src" : "/splash-screen.png" ,
+   "type" : "image/png" ,
+    "sizes" : "1024x1024"
+} 
     ]
     
     

@@ -3,40 +3,86 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--ios support-->
+    <link rel="apple-touch-icon" href="./apple-icon-70x70.png">
+    <meta name="apple-mobileweb-app-status-bar" content="#FF4500">
+    <meta name="theme-color" content="#FF4500">
     <link rel="stylesheet" href="./style.css">
     <link rel="manifest" href="./manifest.json">
      <title>Smash-it</title>
 </head>
 <body>
-    <h1>smashit</h1>
-    <div id="searchContainer">
-            <input type="text" id="searchInput" class="searchControl">
-            <input type="submit" value="submit" id="searchBtn" class="searchControl">  
+    
+    
+    <div id="container">
+        <div class="nav">
+            <div id="logo">
+                <img src="./apple-icon-150x150.png" id="logo-img" alt="" style="width: 2.5rem;">
+            </div>
+            <div id="right-side">
+                
+                <ul>
+                    <li>Home</li>
+                    <li>About</li>
+                    <li>
+                        <div>
+                            <input type="text" id="searchInput" class="searchControl" placeholder="Search weather of other cities">
+                            <input type="submit" value="submit" id="searchBtn" class="searchControl">
+                        </div>
+                    </li>
+                   
+                    
+                </ul>
+                <div id="searchContainer">
+                    
+                    
+        
+            </div>
+            </div>
+        </div>
+    <h6></h6>
+   
 
-    </div>
 
-
-            <div id="weatherContainer">
+            
                <div id="weatherDescription">
-                <h1 id="cityHeader"> </h1>
-                <div id="weatherMain">
-                    <div id="temperature"></div>
-                    <div id="weatherDescriptionHeader"></div>
-                    <div id="documentConfig"> <img id="documentIconImage" src="" alt=""></div>
-                </div>
+                
+                
+               
+               <div class="datetime grid-item">City : <div id="cityHeader"> </div></div>
+               <div class="datetime grid-item">Date : <div id="date"></div></div>
+              <div class="datetime grid-item">Time : <div id="time"></div></div>
+           
+                
+                
+                  <div class="grid-item">Weather Description</div>
+                  <div id="weatherDescriptionHeader" class="grid-item"></div>
+                  <div class="grid-item" id="documentConfig"> <img id="documentIconImage" src="" alt=""></div>
+                  <div class="grid-item">Temperature :</div>
+                  <div class="grid-item">Min. Temp. <div id="temperature_min"></div></div>
+                  <div class="grid-item">Max. Temp. <div id="temperature_max"></div></div>
+                 <div class="grid-item"> wind speed : <div id="windSpeed" class="bottomDetails"></div> </div>
+                   <div class="grid-item"> Humidity:<div id="humidity" class="bottomDetails"></div> </div>
+                   <div class="grid-item"></div>
+               
 
-                <div id="windSpeed" class="bottomDetails"></div>
-                <div id="humidity" class="bottomDetails"></div>
+             
                </div>
             </div>
-    
+        
 
-<script>
-    
-</script>
+<!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="/__/firebase/7.19.1/firebase-app.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+<script src="/__/firebase/7.19.1/firebase-analytics.js"></script>
+
+<!-- Initialize Firebase -->
+<script src="/__/firebase/init.js"></script>
 
 <script src="./index.js"></script>
-
+<script src="./app.js"></script>
 
 
 </body>
