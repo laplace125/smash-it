@@ -6,7 +6,8 @@ const asset = [
     '/style.css',
     '/index.js',
     '/apple-icon-150x150.png' ,
-    '/splash-screen.jpg'
+    '/splash-screen.jpg',
+    'https://api.openweathermap.org/data/2.5/weather?q=london&APPID=b44a75f786956d76ce1dd22e69f9b892&units=metric'
 ];
 
 

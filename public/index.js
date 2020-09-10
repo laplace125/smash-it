@@ -1,3 +1,4 @@
+
 //function to search weather by location
 function searchWeather(searchTerm){
     console.log(searchTerm)
@@ -37,13 +38,16 @@ function searchWeather(searchTerm){
         */
 
         let weatherDescriptionHeader = document.getElementById('weatherDescriptionHeader');
+        let temperatureElement = document.getElementById('temperature');
         let temperatureElement_max = document.getElementById('temperature_max');
         let temperatureElement_min = document.getElementById('temperature_min');
-        let humidityElement = document.getElementById('humidity');
+        let pressureElement = document.getElementById('pressure');
         let windSpeedElement = document.getElementById('windSpeed');
         let cityHeader = document.getElementById('cityHeader');
         let weatherIcon = document.getElementById('documentIconImage');
         let moment = document.getElementById('date');
+        
+
 
         weatherIcon.src = 'https://openweathermap.org/img/w/' + resultFromServer.weather[0].icon + '.png';
       
@@ -54,11 +58,15 @@ function searchWeather(searchTerm){
         console.log(ddate1.slice(0, 15));
         let resultDescription = resultFromServer.weather[0].description;
         weatherDescriptionHeader.innerHTML = resultDescription.charAt(0).toUpperCase() + resultDescription.slice(1) ;
+        temperatureElement.innerHTML = Math.floor(resultFromServer.main.temp) + '&#176' + 'C';
         temperatureElement_min.innerHTML = Math.floor(resultFromServer.main.temp_min) + '&#176' + 'C';
         temperatureElement_max.innerHTML = Math.floor(resultFromServer.main.temp_max) + '&#176' + 'C';
         cityHeader.innerHTML = resultFromServer.name;
+        windSpeedElement.innerHTML = resultFromServer.wind.speed; 
+        pressureElement.innerHTML = resultFromServer.main.pressure; 
         moment.innerHTML = ddate1.slice(0 , 15) ;
         document.getElementById('time').innerHTML = ddate1.slice(15 , 21); 
+
     }
 
 }
@@ -72,7 +80,4 @@ document.getElementById('searchBtn').addEventListener('click' , () => {
         }
             
 })
-
-
-
 
